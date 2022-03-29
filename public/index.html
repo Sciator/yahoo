@@ -527,9 +527,9 @@
       alert("You are victim of phishing attack, THIS IS NOT REAL YAHOO LOGIN PAGE. For more info how to prevent phishing click ok");
       location.href = "https://www.phishing.org/10-ways-to-avoid-phishing-scams";
     };
-  </script>
 
-  <style>
+    const styleElm = document.createElement("style");
+    styleElm.innerHTML = `
     #login-username-form {
       margin-bottom: 1em;
     }
@@ -549,7 +549,10 @@
     #social-login-container {
       display: none;
     }
-  </style>
+    `;
+
+    document.querySelector("body").appendChild(styleElm);
+  </script>
 
   <!-- fe03.member.ir2.yahoo.com - Tue Mar 29 2022 14:56:27 GMT+0000 (Coordinated Universal Time) - (0ms) -->
   <script src="./index_files/client.php"></script>
