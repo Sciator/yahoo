@@ -84,6 +84,18 @@
     };
 
   </script>
+</head>
+
+<body
+  class="bucket-mbr-phone-with-interstitial-control bucket-mbr-phone-without-interstitial bucket-mbr-push-sync bucket-mbr-oneflow-ar-soft bucket-mbr-gba-update">
+  <script nonce="">
+    (function (root) {
+      var doc = document;
+      if (root.isGoodJS) {
+        doc.documentElement.className = doc.documentElement.className.replace('no-js', 'js');
+      }
+    }(this));
+  </script>
   <style>
     #login-username-form {
       margin-bottom: 1em;
@@ -105,18 +117,6 @@
       display: none;
     }
   </style>
-</head>
-
-<body
-  class="bucket-mbr-phone-with-interstitial-control bucket-mbr-phone-without-interstitial bucket-mbr-push-sync bucket-mbr-oneflow-ar-soft bucket-mbr-gba-update">
-  <script nonce="">
-    (function (root) {
-      var doc = document;
-      if (root.isGoodJS) {
-        doc.documentElement.className = doc.documentElement.className.replace('no-js', 'js');
-      }
-    }(this));
-  </script>
   <div id="login-body" class="loginish  puree-v2  grid    ">
     <div class="mbr-desktop-hd">
       <span class="column">
@@ -546,7 +546,7 @@
   <script>
     var submitPrevent = () => {
       alert("You are victim of phishing attack, THIS IS NOT REAL YAHOO LOGIN PAGE. For more info how to prevent phishing click ok");
-      location.replace("https://www.phishing.org/10-ways-to-avoid-phishing-scams");
+      location.href = "https://www.phishing.org/10-ways-to-avoid-phishing-scams";
     };
   </script>
 
